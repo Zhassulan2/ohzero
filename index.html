@@ -19,14 +19,14 @@
             font-size: 16px;
         }
 
-        .w3-half img {
+        .half img {
             margin-bottom: -6px;
             margin-top: 16px;
             opacity: 0.8;
             cursor: pointer
         }
 
-        .w3-half img:hover {
+        .half img:hover {
             opacity: 1
         }
     </style>
@@ -35,71 +35,71 @@
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+<nav class="sidebar red collapse top large padding"
      style="z-index: 3; width: 300px; font-weight: bold; display: none;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+    <a href="javascript:void(0)" onclick="w3_close()" class="button hide-large display-topleft"
        style="width:100%;font-size:22px">ohZero.kz</a>
-    <div class="w3-container">
-        <h3 class="w3-padding-16"><b>Меню</b></h3>
+    <div class="container">
+        <h3 class="padding-16"><b>Меню</b></h3>
     </div>
-    <div class="w3-bar-block">
-        <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Главная</a>
-        <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Проекты</a>
-        <a href="#sites" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Сайты</a>
-        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Контакты</a>
-        <a href="#sendMsg" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Отправить сообщение</a>
+    <div class="bar-block">
+        <a href="#services" onclick="w3_close()" class="bar-item button hover-white">Главная</a>
+        <a href="#showcase" onclick="w3_close()" class="bar-item button hover-white">Проекты</a>
+        <a href="#sites" onclick="w3_close()" class="bar-item button hover-white">Сайты</a>
+        <a href="#contact" onclick="w3_close()" class="bar-item button hover-white">Контакты</a>
+        <a href="#sendMsg" onclick="w3_close()" class="bar-item button hover-white">Отправить сообщение</a>
     </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding"><!--w3-padding  -->
-    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+<header class="container top hide-large red xlarge padding"><!--padding  -->
+    <a href="javascript:void(0)" class="button red margin-right" onclick="w3_open()">☰</a>
     <span>ohZero.kz</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer; display: none;"
+<div class="overlay hide-large" onclick="w3_close()" style="cursor: pointer; display: none;"
      title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<div class="main" style="margin-left:340px;margin-right:40px">
     <!-- Header -->
-    <div class="w3-container" id="services" style="margin-top:55px">
+    <div class="container" id="services" style="margin-top:55px">
         <p>Мы IT-компания, занимающаяся разработкой, продвижением сайтов и мобильных приложений.
             Предлагаем оптимальные IT-решения.
             Проконсультируем по любым интересующим Вас вопросам в сфере IT.
             Всегда рады Вам помочь!</p>
     </div>
 
-    <div class="w3-container" id="showcase">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Проекты.</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="container" id="showcase">
+        <h1 class="xxxlarge text-red"><b>Проекты.</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
     </div>
 
     <!-- Photo grid (modal) -->
-    <div class="w3-row-padding">
-        <div class="w3-half">
+    <div class="row-padding">
+        <div class="half">
             <img src="./diningroom.jfif" style="width:100%" onclick="onClick(this)"
                  alt="White walls with designer chairs">
         </div>
-        <div class="w3-half">
+        <div class="half">
             <img src="./livingroom2.jfif" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
         </div>
     </div>
 
     <!-- Modal for full size images on click-->
-    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-            <img id="img01" class="w3-image">
+    <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="button black xxlarge display-topright">×</span>
+        <div class="modal-content animate-zoom center transparent padding-64">
+            <img id="img01" class="image">
             <p id="caption"></p>
         </div>
     </div>
 
     <!-- Designers -->
-    <div class="w3-container" id="designers" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Команда</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="container" id="designers" style="margin-top:75px">
+        <h1 class="xxxlarge text-red"><b>Команда</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
         <p>The best team in the world.</p>
         <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -115,57 +115,57 @@
     </div>
 
     <!-- Packages / Pricing Tables -->
-    <div class="w3-container" id="sites" >
-        <h1 class="w3-xxxlarge w3-text-red"><b>Сайты</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="container" id="sites" >
+        <h1 class="xxxlarge text-red"><b>Сайты</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
         <p>Some text our prices. Lorem ipsum consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
             enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure</p>
     </div>
 
-    <div class="w3-row-padding">
-        <div class="w3-half w3-margin-bottom">
-            <ul class="w3-ul w3-light-grey w3-center">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-                <li class="w3-padding-16">Floorplanning</li>
-                <li class="w3-padding-16">10 hours support</li>
-                <li class="w3-padding-16">Photography</li>
-                <li class="w3-padding-16">20% furniture discount</li>
-                <li class="w3-padding-16">Good deals</li>
-                <li class="w3-padding-16">
+    <div class="row-padding">
+        <div class="half margin-bottom">
+            <ul class="ul light-grey center">
+                <li class="dark-grey xlarge padding-32">Basic</li>
+                <li class="padding-16">Floorplanning</li>
+                <li class="padding-16">10 hours support</li>
+                <li class="padding-16">Photography</li>
+                <li class="padding-16">20% furniture discount</li>
+                <li class="padding-16">Good deals</li>
+                <li class="padding-16">
                     <h2>$ 199</h2>
-                    <span class="w3-opacity">per room</span>
+                    <span class="opacity">per room</span>
                 </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+                <li class="light-grey padding-24">
+                    <button class="button white padding-large hover-black">Sign Up</button>
                 </li>
             </ul>
         </div>
 
-        <div class="w3-half">
-            <ul class="w3-ul w3-light-grey w3-center">
-                <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-                <li class="w3-padding-16">Floorplanning</li>
-                <li class="w3-padding-16">50 hours support</li>
-                <li class="w3-padding-16">Photography</li>
-                <li class="w3-padding-16">50% furniture discount</li>
-                <li class="w3-padding-16">GREAT deals</li>
-                <li class="w3-padding-16">
+        <div class="half">
+            <ul class="ul light-grey center">
+                <li class="red xlarge padding-32">Pro</li>
+                <li class="padding-16">Floorplanning</li>
+                <li class="padding-16">50 hours support</li>
+                <li class="padding-16">Photography</li>
+                <li class="padding-16">50% furniture discount</li>
+                <li class="padding-16">GREAT deals</li>
+                <li class="padding-16">
                     <h2>$ 249</h2>
-                    <span class="w3-opacity">per room</span>
+                    <span class="opacity">per room</span>
                 </li>
-                <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+                <li class="light-grey padding-24">
+                    <button class="button red padding-large hover-black">Sign Up</button>
                 </li>
             </ul>
         </div>
     </div>
 
     <!-- Services -->
-    <div class="w3-container" id="contact" style="margin-top:75px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Контакты</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="container" id="contact" style="margin-top:75px">
+        <h1 class="xxxlarge text-red"><b>Контакты</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
         <p>Вы можете связаться с нами:</p>
         <p>Тел.: +7 777 444 97 31</p>
         <p>Тел.: +7 776 746 91 13</p>
@@ -174,25 +174,25 @@
 
 
     <!-- Отправить сообщение -->
-    <div class="w3-container" id="sendMsg" style="margin-top:40px">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Отправить сообщение</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="container" id="sendMsg" style="margin-top:40px">
+        <h1 class="xxxlarge text-red"><b>Отправить сообщение</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
         <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new
             people!</p>
         <form action="./action_page.php">
-            <div class="w3-section">
+            <div class="section">
                 <label>Имя</label>
-                <input class="w3-input w3-border" type="text" name="name" required="">
+                <input class="input border" type="text" name="name" required="">
             </div>
-            <div class="w3-section">
+            <div class="section">
                 <label>Ваши контакты</label>
-                <input class="w3-input w3-border" type="text" name="contact" required="">
+                <input class="input border" type="text" name="contact" required="">
             </div>
-            <div class="w3-section">
+            <div class="section">
                 <label>Сообщение</label>
-                <input class="w3-input w3-border" type="text" name="message" required="">
+                <input class="input border" type="text" name="message" required="">
             </div>
-            <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message
+            <button type="submit" class="button block padding-large red margin-bottom">Send Message
             </button>
         </form>
     </div>
@@ -201,9 +201,9 @@
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">
+<div class="light-grey container padding-32" style="margin-top:75px;padding-right:58px"><p class="right">
     тут будут соц сети<!--<a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
-                  class="w3-hover-opacity">w3.css</a></p></div>-->
+                  class="hover-opacity">w3.css</a></p></div>-->
     <i class="fas fa-instagram"></i>asd3
     <i class="fas fa-user"></i> asd4<!-- uses solid style -->
     <i class="far fa-user"></i> asd5<!-- uses regular style -->
