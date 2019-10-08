@@ -12,6 +12,9 @@
     padding: 6px;
     color: #000;
 }
+.border0{
+    border: 0px;
+}
 .github a:hover {background: #191919; color: #fff;}
 .youtube a:hover {background: #c4302b; color: #fff;}
 .google-pluse a:hover {background: #DD4B39; color: #fff;}
