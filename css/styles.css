@@ -32,8 +32,10 @@
 .whatsapp a:hover {background: #50b154; color: #fff;}
 .weibo a:hover {background: #d52b2b; color: #fff;}
 .dropbox a:hover {background: #1087dd; color: #fff;}
+
+@media(min-width:993px){.mobile-top{margin-top:0px;padding-top:50px}}
+@media(max-width:992px){.mobile-top{margin-top:50px;padding-top:50px}}
 /*
-@media(max-width:993px){.mobile-top{margin-top:105px;padding-top:50px}}
 @media only screen and (max-width: 993px) {
 }
 
