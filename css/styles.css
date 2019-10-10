@@ -33,4 +33,4 @@
 .weibo a:hover {background: #d52b2b; color: #fff;}
 .dropbox a:hover {background: #1087dd; color: #fff;}
 
-@media (min-width:993px){.mobile-top{margin-top:105px;}}
+@media(min-width:993px){.mobile-top{margin-top:105px;}}
