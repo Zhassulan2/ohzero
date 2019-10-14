@@ -35,4 +35,4 @@
 
 @media(max-width:992px){.mobile-top{padding-top:45px}}
 
-.social{display: inline-block;}
+.social div{display: inline-block;}
