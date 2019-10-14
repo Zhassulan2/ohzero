@@ -1,33 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" >
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-      <loc>http://ohzero.kz/</loc>
-      <lastmod>2019-10-08T16:10:59+00:00</lastmod>
-      <priority>1.00</priority>
+        <loc>http://ohzero.kz/</loc>
+        <lastmod>2019-10-08T16:10:59+00:00</lastmod>
+        <priority>1.00</priority>
     </url>
     <url>
-      <loc>http://ohzero.kz/site1/</loc>
-      <lastmod>2019-10-08T15:39:02+00:00</lastmod>
-      <priority>0.80</priority>
+        <loc>http://ohzero.kz/site1/</loc>
+        <lastmod>2019-10-08T15:39:02+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-      <loc>http://ohzero.kz/site2/</loc>
-      <lastmod>2019-10-08T15:06:00+00:00</lastmod>
-      <priority>0.80</priority>
+        <loc>http://ohzero.kz/site2/</loc>
+        <lastmod>2019-10-08T15:06:00+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-      <loc>http://ohzero.kz/docs/commercial_proposal.docx</loc>
-      <lastmod>2019-10-08T15:02:07+00:00</lastmod>
-      <priority>0.80</priority>
+        <loc>http://ohzero.kz/docs/commercial_proposal.pdf</loc>
+        <lastmod>2019-10-08T15:02:07+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-      <loc>http://ohzero.kz/site1/index.html</loc>
-      <lastmod>2019-10-08T15:39:02+00:00</lastmod>
-      <priority>0.64</priority>
+        <loc>http://ohzero.kz/docs/commercial_proposal.docx</loc>
+        <lastmod>2019-10-08T15:02:07+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
-    <url>
-      <loc>http://ohzero.kz/site2/index.html</loc>
-      <lastmod>2019-10-08T15:06:00+00:00</lastmod>
-      <priority>0.64</priority>
-    </url>
-  </urlset>
+</urlset>
