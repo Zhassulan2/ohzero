@@ -34,3 +34,5 @@
 .dropbox a:hover {background: #1087dd; color: #fff;}
 
 @media(max-width:992px){.mobile-top{padding-top:45px}}
+
+.inline-social{display: inline-block}
