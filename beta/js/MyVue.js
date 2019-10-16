@@ -5,7 +5,6 @@ new Vue({
     },
     methods: {
         langFunc () {
-            window.location.reload(true)
             if(localStorage.getItem("lang") === null){
                 console.log(localStorage.getItem("lang"));
                 this.message = localStorage.getItem("lang");
