@@ -13,7 +13,6 @@ new Vue({
                 localStorage.setItem("lang", "RU");
                 this.message = localStorage.getItem("lang");
             };
-
         }
     },
     mounted() {
