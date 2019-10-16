@@ -5,8 +5,13 @@ new Vue({
     },
     methods: {
         langFunc () {
-            localStorage.setItem("lang", "RU");
-            this.message = localStorage.getItem("lang");
+            if(localStorage.getItem("lang") === null){
+                this.message = localStorage.getItem("lang");
+            } else{
+                localStorage.setItem("lang", "RU");
+                this.message = localStorage.getItem("lang");
+            };
+
         }
     },
     mounted() {
