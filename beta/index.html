@@ -28,8 +28,8 @@
             },
             methods: {
                 langFunc () {
-                    setItem("lang", "RU");
-                    this.message = getItem("lang");
+                    localStorage.setItem("lang", "RU");
+                    this.message = localStorage.getItem("lang");
                 }
             },
             mounted() {
