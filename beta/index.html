@@ -24,7 +24,16 @@
         new Vue({
             el: '#app',
             data: {
-                message: 'Hello Vue!'
+                message: 'привет Vue!'
+            },
+            methods: {
+                langFunc () {
+                    setItem("lang", "RU");
+                    this.message = getItem("lang");
+                }
+            },
+            mounted() {
+                this.langFunc();
             }
         })
     </script>
