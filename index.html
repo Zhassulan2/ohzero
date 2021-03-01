@@ -1,247 +1,1073 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <title>ohZero.kz</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="KVH2rpGnyVhwkYvN6GCLF4Eu5toSS71nuWnBDq4b2eU"/>
-    <meta name="yandex-verification" content="49b0ba94a68723c2"/>
-    <meta name="keywords"
-          content="создание сайтов, создание сайта, разработка сайта, разработка сайтов, разработка веб сайтов, разработка web сайтов, разработка сайтов Казахстан">
-    <meta name="description"
-          content="Мы разработаем сайт, который произведет правильное первое впечатление на ваших будущих клиентов!">
-    <link rel="icon" href="./favicon.png" type="image/png">
-    <link rel="stylesheet" href="./css/w3.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <!--<link rel="manifest" href="./manifest.json">-->
-</head>
-<body>
-
-<!-- Sidebar/menu -->
-<nav class="sidebar red collapse top large padding"
-     style="z-index: 3; width: 300px; font-weight: bold; display: none;" id="mySidebar"><br>
-    <a href="javascript:void(0)" onclick="w3_close()" class="button hide-large display-topleft"
-       style="width:100%;font-size:22px">ohZero.kz</a>
-    <div class="container">
-        <h3 class="padding-16"><b>Меню</b></h3>
-    </div>
-    <div class="bar-block">
-        <a href="#services" onclick="w3_close()" class="bar-item button hover-white">О нас</a>
-        <a href="#showcase" onclick="w3_close()" class="bar-item button hover-white">Проекты</a>
-        <a href="#about_sites" onclick="w3_close()" class="bar-item button hover-white">О сайтах</a>
-        <a href="#sites" onclick="w3_close()" class="bar-item button hover-white">Тарифы</a>
-        <a href="#contact" onclick="w3_close()" class="bar-item button hover-white">Контакты</a>
-        <a href="#sendMsg" onclick="w3_close()" class="bar-item button hover-white">Отправить сообщение</a>
-    </div>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="container top hide-large red xlarge padding"><!--  -->
-    <a href="javascript:void(0)" class="button red margin-right" onclick="w3_open()">☰</a>
-    <span>ohZero.kz</span>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="overlay hide-large" onclick="w3_close()" style="cursor: pointer; display: none;"
-     title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="main mobile-top" style="margin-left:340px;margin-right:40px">
-    <!-- Header -->
-    <div class="container" id="services">
-        <h1 class="xxxlarge text-red"><b>О нас</b></h1>
-        <hr style="width:50px;border:5px solid red" class="round">
-        <p>Мы IT-компания, ТОО "ohZero", занимаемся разработкой, продвижением сайтов и мобильных приложений.
-            Предлагаем оптимальные IT-решения.
-            Проконсультируем по любым интересующим Вас вопросам в сфере IT.
-            Всегда рады Вам помочь!</p>
-    </div>
-
-    <div class="container" id="showcase">
-        <h1 class="xxxlarge text-red"><b>Проекты {{1-1}}</b></h1>
-        <hr style="width:50px;border:5px solid red" class="round">
-
-    </div>
-
-    <!-- Photo grid (modal) -->
-    <div class="row-padding">
-        <div>Вы можете ознакомиться с шаблонами сайт-визитки и landing page нажав на следующие картинки.
-        <br>
-        </div>
-        <div>
-            <div class="half">
-                <strong>Сайт-визитка</strong>
-                <a href="./site2"><img alt="Первый сайт" src="./site2/site2.JPG" style="width:100%"></a>
+<!-- saved from url=(0031)http://project3724999.tilda.ws/ -->
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--metatextblock-->
+      <title>Интернет-Магазин Hello</title>
+      <meta name="description" content="Базовый шаблон магазина с логотипом и описанием на первом экране и плиткой товаров.">
+      <meta property="og:url" content="https://ohzero.kz/">
+      <meta property="og:title" content="Интернет-Магазин Hello">
+      <meta property="og:description" content="Базовый шаблон магазина с логотипом и описанием на первом экране и плиткой товаров.">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="./favicon.svg">
+      <link rel="canonical" href="">
+      <!--/metatextblock-->
+      <meta property="fb:app_id" content="257953674358265">
+      <meta name="format-detection" content="telephone=no">
+      <meta http-equiv="x-dns-prefetch-control" content="on">
+      <link rel="dns-prefetch" href="https://tilda.ws/">
+      <link rel="dns-prefetch" href="https://static.tildacdn.com/">
+      <meta name="robots" content="nofollow">
+      <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+      <!-- Assets -->
+      <link rel="stylesheet" href="./libs/tilda-grid-3.0.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./libs/tilda-blocks-2.12.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./libs/tilda-animation-1.0.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./libs/tilda-popup-1.1.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./libs/tilda-slds-1.4.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./libs/tilda-zoom-2.0.min.css" type="text/css" media="all">
+      <link rel="stylesheet" href="./libs/tilda-catalog-1.1.min.css" type="text/css" media="all">
+      <script 
+         type="text/javascript" async="" id="tildastatscript" 
+         src="./libs/tildasimplestat-0.1.min.js">
+      </script>
+      <script src="./libs/jquery-1.10.2.min.js"></script>
+      <script src="./libs/tilda-scripts-2.8.min.js"></script>
+      <script src="./libs/tilda-blocks-2.7.js"></script>
+      <script src="./libs/lazyload-1.3.min.js" charset="utf-8">
+      </script><script src="./libs/tilda-animation-1.0.min.js" charset="utf-8"></script>
+      <script src="./libs/hammer.min.js" charset="utf-8"></script>
+      <script src="./libs/tilda-slds-1.4.min.js" charset="utf-8"></script>
+      <script src="./libs/tilda-products-1.0.min.js" charset="utf-8"></script>
+      <script src="./libs/tilda-zoom-2.0.min.js" charset="utf-8"></script>
+      <script src="./libs/tilda-catalog-1.1.min.js" charset="utf-8"></script>
+      <script src="./libs/tilda-forms-1.0.min.js" charset="utf-8"></script>
+      <script src="./libs/tilda-cart-1.0.min.js" charset="utf-8"></script>
+      <script type="text/javascript">window.dataLayer = window.dataLayer || [];</script>
+      <script type="text/javascript">
+         if((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent))===false && typeof(sessionStorage)!='undefined' && sessionStorage.getItem('visited')!=='y'){	var style=document.createElement('style');	style.type='text/css';	style.innerHTML='@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';	document.getElementsByTagName('head')[0].appendChild(style);	$(document).ready(function() {	$('.t-records').addClass('t-records_animated');	setTimeout(function(){ $('.t-records').addClass('t-records_visible'); sessionStorage.setItem('visited','y');	},400);	});
+         }
+      </script>
+      <style type="text/css">
+		  @media screen and (min-width: 980px) {
+			.t-records {
+				opacity: 0;
+			}
+			.t-records_animated {
+				-webkit-transition: opacity ease-in-out .2s;
+				-moz-transition: opacity ease-in-out .2s;
+				-o-transition: opacity ease-in-out .2s;
+				transition: opacity ease-in-out .2s;
+			}
+			.t-records.t-records_visible {
+				opacity: 1;
+			}
+		}
+	  </style>
+   </head>
+   <body class="t-body" style="margin: 0px;">
+      <!--allrecords-->
+      <div id="allrecords" class="t-records t-records_animated t-records_visible" data-hook="blocks-collection-content-node" data-tilda-project-id="3724999" data-tilda-page-id="17536576" data-tilda-formskey="2b3cb6488548079d48347c88830f9002" data-tilda-lazy="yes">
+         <div id="rec284167259" class="r t-rec t-rec_pt_60 t-rec_pb_60 r_showed r_anim" style="padding-top:60px;padding-bottom:60px; " data-record-type="61">
+            <!-- T051 -->
+            <div class="t051">
+               <div class="t-container">
+                  <div class="t-col t-col_12 ">
+                     <div class="t051__text t-text t-text_md" style="" field="text">Интернет-Магазин Hello!<br>Мне предоставляем товары по лучшим ценам.<br>Мы предоставляем бесплатную доставку по Нур-Султану.</div>
+                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSetvPmzmyeMcc0NcoFMsbY4gjkkPF5Pi7ujNiChMayZi3KWdA/viewform?embedded=true" width="640" height="550" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+                  </div>
+               </div>
             </div>
-            <div class="half">
-                <strong>Landing page</strong>
-                <a href="./site1"><img alt="Второй сайт" src="./site1/site.jpg" style="width:100%"></a>
+         </div>
+         <div id="rec284167260" class="r t-rec t-rec_pt_0 t-rec_pb_180" style="padding-top:0px;padding-bottom:180px; " data-animationappear="off" data-record-type="754">
+            <!-- t754 --> 
+            <div class="t754" data-show-count="">
+               <div class="t754__parent t754__container_mobile-grid">
+                  <div class="t754__col t-col t-col_4 t-align_center t-item t754__col_mobile-grid js-product" data-product-lid="1500469909554">
+                     <a class="js-product-link" href="#prodpopup">
+                        <div class="t754__content">
+                           <div class="t754__imgwrapper " style="padding-bottom:111.11111111111%;">
+                              <div class="t754__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild3434-3636-4431-b038-393032656635/-/resize/360x400/-/format/webp/9832132844_08b63dd445_o.jpg&quot;);" data-lazy-rule="comm:resize" src=""></div>
+                           </div>
+                           <div class="t754__textwrapper">
+                              <div class="t754__title t-name t-name_md js-product-name" data-auto-correct-font-size="rem" field="li_title__1500469909554" style="font-size:20px;font-weight:400;"> Подушка «Trema» </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500469909554">799</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="t754__col t-col t-col_4 t-align_center t-item t754__col_mobile-grid js-product" data-product-lid="1498486363994">
+                     <a class="js-product-link" href="#prodpopup">
+                        <div class="t754__content">
+                           <div class="t754__imgwrapper " style="padding-bottom:111.11111111111%;">
+                              <div class="t754__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild6338-3831-4334-b365-343965393562/-/resize/360x400/-/format/webp/14432770907_d8dc8e3fb4_o.jpg&quot;);" data-lazy-rule="comm:resize" src=""></div>
+                           </div>
+                           <div class="t754__textwrapper">
+                              <div class="t754__title t-name t-name_md js-product-name" data-auto-correct-font-size="rem" field="li_title__1498486363994" style="font-size:20px;font-weight:400;"> Обложка для плашета «Carnet» </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="margin-right:3px;font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1498486363994">2499</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                                 <div class="t754__price_old t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value" field="li_price_old__1498486363994">2999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="t754__col t-col t-col_4 t-align_center t-item t754__col_mobile-grid js-product" data-product-lid="1500469907722">
+                     <a class="js-product-link" href="#prodpopup">
+                        <div class="t754__content">
+                           <div class="t754__imgwrapper " style="padding-bottom:111.11111111111%;">
+                              <div class="t754__markwrapper">
+                                 <div class="t754__mark" field="li_mark__1500469907722" style="color:#ffffff;background-color:#ff4a4a;">SALE</div>
+                              </div>
+                              <div class="t754__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3734-3131-4464-b663-643166653032/TID_Product_Black_011.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild3734-3131-4464-b663-643166653032/-/resize/360x400/-/format/webp/TID_Product_Black_011.jpg&quot;);" data-lazy-rule="comm:resize" src=""></div>
+                           </div>
+                           <div class="t754__textwrapper">
+                              <div class="t754__title t-name t-name_md js-product-name" data-auto-correct-font-size="rem" field="li_title__1500469907722" style="font-size:20px;font-weight:400;"> Часы «Kruka» </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="margin-right:3px;font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500469907722">3999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                                 <div class="t754__price_old t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value" field="li_price_old__1500469907722">4499</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="t-clear t754__separator t754__separator_number" data-product-separator-number="4"></div>
+                  <div class="t754__col t-col t-col_4 t-align_center t-item t754__col_mobile-grid js-product" data-product-lid="1500469911302">
+                     <a class="js-product-link" href="#prodpopup">
+                        <div class="t754__content">
+                           <div class="t754__imgwrapper " style="padding-bottom:111.11111111111%;">
+                              <div class="t754__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3138-6531-4565-b432-663163623962/14193932991_de304ba1.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild3138-6531-4565-b432-663163623962/-/resize/360x400/-/format/webp/14193932991_de304ba1.jpg&quot;);" data-lazy-rule="comm:resize" src=""></div>
+                           </div>
+                           <div class="t754__textwrapper">
+                              <div class="t754__title t-name t-name_md js-product-name" data-auto-correct-font-size="rem" field="li_title__1500469911302" style="font-size:20px;font-weight:400;"> Глиняный бюст антилопы </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500469911302">4999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="t754__col t-col t-col_4 t-align_center t-item t754__col_mobile-grid js-product" data-product-lid="1498486301712">
+                     <a class="js-product-link" href="#prodpopup">
+                        <div class="t754__content">
+                           <div class="t754__imgwrapper " style="padding-bottom:111.11111111111%;">
+                              <div class="t754__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild3635-6637-4762-b465-313238346461/-/resize/360x400/-/format/webp/21623729612_6c673d2776_k.jpg&quot;);" data-lazy-rule="comm:resize" src=""></div>
+                           </div>
+                           <div class="t754__textwrapper">
+                              <div class="t754__title t-name t-name_md js-product-name" data-auto-correct-font-size="rem" field="li_title__1498486301712" style="font-size:20px;font-weight:400;"> Будильник «Alise» </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1498486301712">1899</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="t754__col t-col t-col_4 t-align_center t-item t754__col_mobile-grid js-product" data-product-lid="1500470241687">
+                     <a class="js-product-link" href="#prodpopup">
+                        <div class="t754__content">
+                           <div class="t754__imgwrapper " style="padding-bottom:111.11111111111%;">
+                              <div class="t754__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild6638-6665-4065-b730-343634313965/10173649646_8b5902ca4d_o.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild6638-6665-4065-b730-343634313965/-/resize/360x400/-/format/webp/10173649646_8b5902ca4d_o.jpg&quot;);" data-lazy-rule="comm:resize" src=""></div>
+                           </div>
+                           <div class="t754__textwrapper">
+                              <div class="t754__title t-name t-name_md js-product-name" data-auto-correct-font-size="rem" field="li_title__1500470241687" style="font-size:20px;font-weight:400;"> Подушка «Rabbi» </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500470241687">799</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="t-clear t754__separator t754__separator_number" data-product-separator-number="7"></div>
+                  <div class="t754__col t-col t-col_4 t-align_center t-item t754__col_mobile-grid js-product" data-product-lid="1500470243820">
+                     <a class="js-product-link" href="#prodpopup">
+                        <div class="t754__content">
+                           <div class="t754__imgwrapper " style="padding-bottom:111.11111111111%;">
+                              <div class="t754__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3539-6365-4665-b061-666463613235/14013247928_e74614e90b_h.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild3539-6365-4665-b061-666463613235/-/resize/360x400/-/format/webp/14013247928_e74614e90b_h.jpg&quot;);" data-lazy-rule="comm:resize" src=""></div>
+                           </div>
+                           <div class="t754__textwrapper">
+                              <div class="t754__title t-name t-name_md js-product-name" data-auto-correct-font-size="rem" field="li_title__1500470243820" style="font-size:20px;font-weight:400;"> Кофейный чайник «Stuka» </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500470243820">1799</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="t754__col t-col t-col_4 t-align_center t-item t754__col_mobile-grid js-product" data-product-lid="1497456130776">
+                     <a class="js-product-link" href="#prodpopup">
+                        <div class="t754__content">
+                           <div class="t754__imgwrapper " style="padding-bottom:111.11111111111%;">
+                              <div class="t754__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3761-3430-4966-b734-343939336336/10155125583_1a4ba5c1.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild3761-3430-4966-b734-343939336336/-/resize/360x400/-/format/webp/10155125583_1a4ba5c1.jpg&quot;);" data-lazy-rule="comm:resize" src=""></div>
+                           </div>
+                           <div class="t754__textwrapper">
+                              <div class="t754__title t-name t-name_md js-product-name" data-auto-correct-font-size="rem" field="li_title__1497456130776" style="font-size:20px;font-weight:400;"> Камера «Leica» <br> </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1497456130776">3999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="t754__col t-col t-col_4 t-align_center t-item t754__col_mobile-grid js-product" data-product-lid="1500470245901">
+                     <a class="js-product-link" href="#prodpopup">
+                        <div class="t754__content">
+                           <div class="t754__imgwrapper " style="padding-bottom:111.11111111111%;">
+                              <div class="t754__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild6232-3130-4437-a234-363038653263/14193978851_c146bdfdaf_o.jpg" style="background-image: url(&quot;https://thumb.tildacdn.com/tild6232-3130-4437-a234-363038653263/-/resize/360x400/-/format/webp/14193978851_c146bdfdaf_o.jpg&quot;);" data-lazy-rule="comm:resize" src=""></div>
+                           </div>
+                           <div class="t754__textwrapper">
+                              <div class="t754__title t-name t-name_md js-product-name" data-auto-correct-font-size="rem" field="li_title__1500470245901" style="font-size:20px;font-weight:400;"> Серебристый бюст оленя </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500470245901">4999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="t-popup" style="background-color: rgb(247, 247, 247); display: none;">
+                  <div class="t-popup__close" style="background-color: #f7f7f7;">
+                     <div class="t-popup__close-wrapper">
+                        <svg class="t-popup__close-icon t-popup__close-icon_arrow" width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <path d="M10.4142136,5 L11.8284271,6.41421356 L5.829,12.414 L23.4142136,12.4142136 L23.4142136,14.4142136 L5.829,14.414 L11.8284271,20.4142136 L10.4142136,21.8284271 L2,13.4142136 L10.4142136,5 Z" fill="#000000"></path>
+                        </svg>
+                        <svg class="t-popup__close-icon t-popup__close-icon_cross" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd">
+                              <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                              <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                           </g>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="t754__close-text-wrapper">
+                     <div class="t754__close-text t-descr t-descr_xxs" style="color:#000000;">Все товары</div>
+                  </div>
+                  <div class="t-popup__container t-popup__container-static t-popup__container-animated" style="background-color:#f7f7f7;">
+                     <div id="t754__product-1500469909554" class="t754__product-full js-product" style="display: block;" data-product-lid="1500469909554">
+                        <div class="t754__container">
+                           <div class="t754__col_left t-col t-col_6">
+                              <!-- gallery --> 
+                              <div class="t-slds" style="">
+                                 <div class="t-slds__main">
+                                    <div class="t-slds__container" style="background-color:#ebebeb;">
+                                       <div class="t-slds__items-wrapper t-slds_animated-none t-slds__nocycle" data-slider-transition="300" data-slider-with-cycle="false" data-slider-correct-height="true" data-auto-correct-mobile-width="false" data-slider-initialized="true" data-slider-totalslides="1" data-slider-pos="1" data-slider-curr-pos="1" data-slider-cycle="" data-slider-animated="" style="width: 1680px; transform: translate3d(-560px, 0px, 0px); touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 560px;">
+                                          <div class="t-slds__item t-slds__item-loaded" data-slide-index="0" style="width: 560px;">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg">
+                                                <div class="t-slds__imgwrapper" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg" style="padding-bottom: 100%; background-image: url(&quot;https://thumb.tildacdn.com/tild3434-3636-4431-b038-393032656635/-/cover/560x560/center/center/-/format/webp/9832132844_08b63dd445_o.jpg&quot;);" src=""></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="t-slds__item t-slds__item-loaded t-slds__item_active" data-slide-index="1" style="width: 560px;">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg">
+                                                <div class="t-slds__imgwrapper t-zoomable" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg" style="padding-bottom: 100%; background-image: url(&quot;https://thumb.tildacdn.com/tild3434-3636-4431-b038-393032656635/-/cover/560x560/center/center/-/format/webp/9832132844_08b63dd445_o.jpg&quot;);" src=""></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="t-slds__item t-slds__item-loaded" data-slide-index="2" style="width: 560px;">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg">
+                                                <div class="t-slds__imgwrapper" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3434-3636-4431-b038-393032656635/9832132844_08b63dd445_o.jpg" style="padding-bottom: 100%; background-image: url(&quot;https://thumb.tildacdn.com/tild3434-3636-4431-b038-393032656635/-/cover/560x560/center/center/-/format/webp/9832132844_08b63dd445_o.jpg&quot;);" src=""></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/gallery --> 
+                           </div>
+                           <div class="t754__col_right t754__wrapper t-col t-col_6 t-align_left">
+                              <div class="t754__title-wrapper">
+                                 <div class="t754__title t-name t-name_xl js-product-name" style="font-weight:400;"> Подушка «Trema» </div>
+                              </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500469909554">799</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                              <div class="t754__btn-wrapper">
+                                 <a href="#order" target="" class="t754__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <table style="width:100%; height:100%;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Добавить в корзину</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </a>
+                              </div>
+                              <div class="t754__descr t-descr t-descr_xxs"> Чехол подушки сделан из 100 % хлопка с черно-белым паттерном. Размер 50 x 80 см </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--.prod-full--> 
+                     <div id="t754__product-1498486363994" class="t754__product-full js-product" style="display: none;" data-product-lid="1498486363994">
+                        <div class="t754__container">
+                           <div class="t754__col_left t-col t-col_6">
+                              <!-- gallery --> 
+                              <div class="t-slds" style="">
+                                 <div class="t-slds__main">
+                                    <div class="t-slds__container" style="background-color:#ebebeb;">
+                                       <div class="t-slds__items-wrapper t-slds_animated-none t-slds__nocycle" data-slider-transition="300" data-slider-with-cycle="false" data-slider-correct-height="true" data-auto-correct-mobile-width="false" data-slider-initialized="true" data-slider-totalslides="1" data-slider-pos="1" data-slider-curr-pos="1" data-slider-cycle="" data-slider-animated="" style="width: 1680px; transform: translate3d(-560px, 0px, 0px); touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 560px;">
+                                          <div class="t-slds__item t-slds__item-loaded" data-slide-index="0" style="width: 560px;">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg">
+                                                <div class="t-slds__imgwrapper" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg" style="padding-bottom: 100%; background-image: url(&quot;https://thumb.tildacdn.com/tild6338-3831-4334-b365-343965393562/-/cover/560x560/center/center/-/format/webp/14432770907_d8dc8e3fb4_o.jpg&quot;);" src=""></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="t-slds__item t-slds__item-loaded t-slds__item_active" data-slide-index="1" style="width: 560px;">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg">
+                                                <div class="t-slds__imgwrapper t-zoomable" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg" style="padding-bottom: 100%; background-image: url(&quot;https://thumb.tildacdn.com/tild6338-3831-4334-b365-343965393562/-/cover/560x560/center/center/-/format/webp/14432770907_d8dc8e3fb4_o.jpg&quot;);" src=""></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="t-slds__item t-slds__item-loaded" data-slide-index="2" style="width: 560px;">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg">
+                                                <div class="t-slds__imgwrapper" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg" style="padding-bottom: 100%; background-image: url(&quot;https://thumb.tildacdn.com/tild6338-3831-4334-b365-343965393562/-/cover/560x560/center/center/-/format/webp/14432770907_d8dc8e3fb4_o.jpg&quot;);" src=""></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/gallery --> 
+                           </div>
+                           <div class="t754__col_right t754__wrapper t-col t-col_6 t-align_left">
+                              <div class="t754__title-wrapper">
+                                 <div class="t754__title t-name t-name_xl js-product-name" style="font-weight:400;"> Обложка для плашета «Carnet» </div>
+                              </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="margin-right:3px;font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1498486363994">2499</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                                 <div class="t754__price_old t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value" field="li_price_old__1498486363994">2999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                              <div class="t754__btn-wrapper">
+                                 <a href="#order" target="" class="t754__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <table style="width:100%; height:100%;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Добавить в корзину</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </a>
+                              </div>
+                              <div class="t754__descr t-descr t-descr_xxs"> Обложка сделана из натуральной кожи. Цвет красный. Подходит для iPad Mini </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--.prod-full--> 
+                     <div id="t754__product-1500469907722" class="t754__product-full js-product" style="display:none;" data-product-lid="1500469907722">
+                        <div class="t754__container">
+                           <div class="t754__col_left t-col t-col_6">
+                              <!-- gallery --> 
+                              <div class="t-slds" style="visibility: hidden;">
+                                 <div class="t-slds__main">
+                                    <div class="t-slds__container" style="background-color:#ebebeb;">
+                                       <div class="t-slds__items-wrapper t-slds_animated-none t-slds__nocycle" data-slider-transition="300" data-slider-with-cycle="false" data-slider-correct-height="true" data-auto-correct-mobile-width="false">
+                                          <div class="t-slds__item t-slds__item_active" data-slide-index="1">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3734-3131-4464-b663-643166653032/TID_Product_Black_011.jpg">
+                                                <div class="t-slds__imgwrapper t-zoomable" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3734-3131-4464-b663-643166653032/TID_Product_Black_011.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img" data-original="https://static.tildacdn.com/tild3734-3131-4464-b663-643166653032/TID_Product_Black_011.jpg" style="padding-bottom:100%; background-image: url(&#39;https://static.tildacdn.com/tild3734-3131-4464-b663-643166653032/-/resizeb/20x/TID_Product_Black_011.jpg&#39;);"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/gallery --> 
+                           </div>
+                           <div class="t754__col_right t754__wrapper t-col t-col_6 t-align_left">
+                              <div class="t754__title-wrapper">
+                                 <div class="t754__title t-name t-name_xl js-product-name" style="font-weight:400;"> Часы «Kruka» </div>
+                              </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="margin-right:3px;font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500469907722">3999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                                 <div class="t754__price_old t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value" field="li_price_old__1500469907722">4499</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                              <div class="t754__btn-wrapper">
+                                 <a href="#order" target="" class="t754__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <table style="width:100%; height:100%;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Добавить в корзину</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </a>
+                              </div>
+                              <div class="t754__descr t-descr t-descr_xxs"> Цвет черный. Диаметр часов 3 x 3 см </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--.prod-full--> 
+                     <div id="t754__product-1500469911302" class="t754__product-full js-product" style="display:none;" data-product-lid="1500469911302">
+                        <div class="t754__container">
+                           <div class="t754__col_left t-col t-col_6">
+                              <!-- gallery --> 
+                              <div class="t-slds" style="visibility: hidden;">
+                                 <div class="t-slds__main">
+                                    <div class="t-slds__container" style="background-color:#ebebeb;">
+                                       <div class="t-slds__items-wrapper t-slds_animated-none t-slds__nocycle" data-slider-transition="300" data-slider-with-cycle="false" data-slider-correct-height="true" data-auto-correct-mobile-width="false">
+                                          <div class="t-slds__item t-slds__item_active" data-slide-index="1">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3138-6531-4565-b432-663163623962/14193932991_de304ba1.jpg">
+                                                <div class="t-slds__imgwrapper t-zoomable" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3138-6531-4565-b432-663163623962/14193932991_de304ba1.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img" data-original="https://static.tildacdn.com/tild3138-6531-4565-b432-663163623962/14193932991_de304ba1.jpg" style="padding-bottom:100%; background-image: url(&#39;https://static.tildacdn.com/tild3138-6531-4565-b432-663163623962/-/resizeb/20x/14193932991_de304ba1.jpg&#39;);"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/gallery --> 
+                           </div>
+                           <div class="t754__col_right t754__wrapper t-col t-col_6 t-align_left">
+                              <div class="t754__title-wrapper">
+                                 <div class="t754__title t-name t-name_xl js-product-name" style="font-weight:400;"> Глиняный бюст антилопы </div>
+                              </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500469911302">4999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                              <div class="t754__btn-wrapper">
+                                 <a href="#order" target="" class="t754__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <table style="width:100%; height:100%;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Добавить в корзину</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </a>
+                              </div>
+                              <div class="t754__descr t-descr t-descr_xxs"> Бюст антилопы сделан из глины. Цвет белый </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--.prod-full--> 
+                     <div id="t754__product-1498486301712" class="t754__product-full js-product" style="display: none;" data-product-lid="1498486301712">
+                        <div class="t754__container">
+                           <div class="t754__col_left t-col t-col_6">
+                              <!-- gallery --> 
+                              <div class="t-slds" style="">
+                                 <div class="t-slds__main">
+                                    <div class="t-slds__container" style="background-color:#ebebeb;">
+                                       <div class="t-slds__items-wrapper t-slds_animated-none t-slds__nocycle" data-slider-transition="300" data-slider-with-cycle="false" data-slider-correct-height="true" data-auto-correct-mobile-width="false" data-slider-initialized="true" data-slider-totalslides="1" data-slider-pos="1" data-slider-curr-pos="1" data-slider-cycle="" data-slider-animated="" style="width: 1680px; transform: translate3d(-560px, 0px, 0px); touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 560px;">
+                                          <div class="t-slds__item t-slds__item-loaded" data-slide-index="0" style="width: 560px;">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg">
+                                                <div class="t-slds__imgwrapper" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg" style="padding-bottom: 100%; background-image: url(&quot;https://thumb.tildacdn.com/tild3635-6637-4762-b465-313238346461/-/cover/560x560/center/center/-/format/webp/21623729612_6c673d2776_k.jpg&quot;);" src=""></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="t-slds__item t-slds__item-loaded t-slds__item_active" data-slide-index="1" style="width: 560px;">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg">
+                                                <div class="t-slds__imgwrapper t-zoomable" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg" style="padding-bottom: 100%; background-image: url(&quot;https://thumb.tildacdn.com/tild3635-6637-4762-b465-313238346461/-/cover/560x560/center/center/-/format/webp/21623729612_6c673d2776_k.jpg&quot;);" src=""></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="t-slds__item t-slds__item-loaded" data-slide-index="2" style="width: 560px;">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg">
+                                                <div class="t-slds__imgwrapper" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img loaded" data-original="https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg" style="padding-bottom: 100%; background-image: url(&quot;https://thumb.tildacdn.com/tild3635-6637-4762-b465-313238346461/-/cover/560x560/center/center/-/format/webp/21623729612_6c673d2776_k.jpg&quot;);" src=""></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/gallery --> 
+                           </div>
+                           <div class="t754__col_right t754__wrapper t-col t-col_6 t-align_left">
+                              <div class="t754__title-wrapper">
+                                 <div class="t754__title t-name t-name_xl js-product-name" style="font-weight:400;"> Будильник «Alise» </div>
+                              </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1498486301712">1899</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                              <div class="t754__btn-wrapper">
+                                 <a href="#order" target="" class="t754__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <table style="width:100%; height:100%;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Добавить в корзину</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </a>
+                              </div>
+                              <div class="t754__descr t-descr t-descr_xxs"> Цвет будильника черный. Ширина и высота 23 см </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--.prod-full--> 
+                     <div id="t754__product-1500470241687" class="t754__product-full js-product" style="display:none;" data-product-lid="1500470241687">
+                        <div class="t754__container">
+                           <div class="t754__col_left t-col t-col_6">
+                              <!-- gallery --> 
+                              <div class="t-slds" style="visibility: hidden;">
+                                 <div class="t-slds__main">
+                                    <div class="t-slds__container" style="background-color:#ebebeb;">
+                                       <div class="t-slds__items-wrapper t-slds_animated-none t-slds__nocycle" data-slider-transition="300" data-slider-with-cycle="false" data-slider-correct-height="true" data-auto-correct-mobile-width="false">
+                                          <div class="t-slds__item t-slds__item_active" data-slide-index="1">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild6638-6665-4065-b730-343634313965/10173649646_8b5902ca4d_o.jpg">
+                                                <div class="t-slds__imgwrapper t-zoomable" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6638-6665-4065-b730-343634313965/10173649646_8b5902ca4d_o.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img" data-original="https://static.tildacdn.com/tild6638-6665-4065-b730-343634313965/10173649646_8b5902ca4d_o.jpg" style="padding-bottom:100%; background-image: url(&#39;https://static.tildacdn.com/tild6638-6665-4065-b730-343634313965/-/resizeb/20x/10173649646_8b5902ca4d_o.jpg&#39;);"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/gallery --> 
+                           </div>
+                           <div class="t754__col_right t754__wrapper t-col t-col_6 t-align_left">
+                              <div class="t754__title-wrapper">
+                                 <div class="t754__title t-name t-name_xl js-product-name" style="font-weight:400;"> Подушка «Rabbi» </div>
+                              </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500470241687">799</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                              <div class="t754__btn-wrapper">
+                                 <a href="#order" target="" class="t754__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <table style="width:100%; height:100%;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Добавить в корзину</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </a>
+                              </div>
+                              <div class="t754__descr t-descr t-descr_xxs"> Чехол подушки сделан из 100 % хлопка с красно-розовым паттерном. Размер 50 x 50 см </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--.prod-full--> 
+                     <div id="t754__product-1500470243820" class="t754__product-full js-product" style="display:none;" data-product-lid="1500470243820">
+                        <div class="t754__container">
+                           <div class="t754__col_left t-col t-col_6">
+                              <!-- gallery --> 
+                              <div class="t-slds" style="visibility: hidden;">
+                                 <div class="t-slds__main">
+                                    <div class="t-slds__container" style="background-color:#ebebeb;">
+                                       <div class="t-slds__items-wrapper t-slds_animated-none t-slds__nocycle" data-slider-transition="300" data-slider-with-cycle="false" data-slider-correct-height="true" data-auto-correct-mobile-width="false">
+                                          <div class="t-slds__item t-slds__item_active" data-slide-index="1">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3539-6365-4665-b061-666463613235/14013247928_e74614e90b_h.jpg">
+                                                <div class="t-slds__imgwrapper t-zoomable" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3539-6365-4665-b061-666463613235/14013247928_e74614e90b_h.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img" data-original="https://static.tildacdn.com/tild3539-6365-4665-b061-666463613235/14013247928_e74614e90b_h.jpg" style="padding-bottom:100%; background-image: url(&#39;https://static.tildacdn.com/tild3539-6365-4665-b061-666463613235/-/resizeb/20x/14013247928_e74614e90b_h.jpg&#39;);"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/gallery --> 
+                           </div>
+                           <div class="t754__col_right t754__wrapper t-col t-col_6 t-align_left">
+                              <div class="t754__title-wrapper">
+                                 <div class="t754__title t-name t-name_xl js-product-name" style="font-weight:400;"> Кофейный чайник «Stuka» </div>
+                              </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500470243820">1799</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                              <div class="t754__btn-wrapper">
+                                 <a href="#order" target="" class="t754__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <table style="width:100%; height:100%;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Добавить в корзину</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </a>
+                              </div>
+                              <div class="t754__descr t-descr t-descr_xxs"> Цвет белый. Размер 30 x 15 см </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--.prod-full--> 
+                     <div id="t754__product-1497456130776" class="t754__product-full js-product" style="display:none;" data-product-lid="1497456130776">
+                        <div class="t754__container">
+                           <div class="t754__col_left t-col t-col_6">
+                              <!-- gallery --> 
+                              <div class="t-slds" style="visibility: hidden;">
+                                 <div class="t-slds__main">
+                                    <div class="t-slds__container" style="background-color:#ebebeb;">
+                                       <div class="t-slds__items-wrapper t-slds_animated-none t-slds__nocycle" data-slider-transition="300" data-slider-with-cycle="false" data-slider-correct-height="true" data-auto-correct-mobile-width="false">
+                                          <div class="t-slds__item t-slds__item_active" data-slide-index="1">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild3761-3430-4966-b734-343939336336/10155125583_1a4ba5c1.jpg">
+                                                <div class="t-slds__imgwrapper t-zoomable" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild3761-3430-4966-b734-343939336336/10155125583_1a4ba5c1.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img" data-original="https://static.tildacdn.com/tild3761-3430-4966-b734-343939336336/10155125583_1a4ba5c1.jpg" style="padding-bottom:100%; background-image: url(&#39;https://static.tildacdn.com/tild3761-3430-4966-b734-343939336336/-/resizeb/20x/10155125583_1a4ba5c1.jpg&#39;);"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/gallery --> 
+                           </div>
+                           <div class="t754__col_right t754__wrapper t-col t-col_6 t-align_left">
+                              <div class="t754__title-wrapper">
+                                 <div class="t754__title t-name t-name_xl js-product-name" style="font-weight:400;"> Камера «Leica» <br> </div>
+                              </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1497456130776">3999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                              <div class="t754__btn-wrapper">
+                                 <a href="#order" target="" class="t754__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <table style="width:100%; height:100%;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Добавить в корзину</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </a>
+                              </div>
+                              <div class="t754__descr t-descr t-descr_xxs"> Пленочный фотоаппарт «Leica». Размер 7 x 14 см </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--.prod-full--> 
+                     <div id="t754__product-1500470245901" class="t754__product-full js-product" style="display:none;" data-product-lid="1500470245901">
+                        <div class="t754__container">
+                           <div class="t754__col_left t-col t-col_6">
+                              <!-- gallery --> 
+                              <div class="t-slds" style="visibility: hidden;">
+                                 <div class="t-slds__main">
+                                    <div class="t-slds__container" style="background-color:#ebebeb;">
+                                       <div class="t-slds__items-wrapper t-slds_animated-none t-slds__nocycle" data-slider-transition="300" data-slider-with-cycle="false" data-slider-correct-height="true" data-auto-correct-mobile-width="false">
+                                          <div class="t-slds__item t-slds__item_active" data-slide-index="1">
+                                             <div class="t-slds__wrapper" itemscope="" itemtype="http://schema.org/ImageObject">
+                                                <meta itemprop="image" content="https://static.tildacdn.com/tild6232-3130-4437-a234-363038653263/14193978851_c146bdfdaf_o.jpg">
+                                                <div class="t-slds__imgwrapper t-zoomable" bgimgfield="gi_img__0" data-zoom-target="0" data-zoomable="yes" data-img-zoom-url="https://static.tildacdn.com/tild6232-3130-4437-a234-363038653263/14193978851_c146bdfdaf_o.jpg">
+                                                   <div class="t-slds__bgimg t-bgimg js-product-img" data-original="https://static.tildacdn.com/tild6232-3130-4437-a234-363038653263/14193978851_c146bdfdaf_o.jpg" style="padding-bottom:100%; background-image: url(&#39;https://static.tildacdn.com/tild6232-3130-4437-a234-363038653263/-/resizeb/20x/14193978851_c146bdfdaf_o.jpg&#39;);"></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!--/gallery --> 
+                           </div>
+                           <div class="t754__col_right t754__wrapper t-col t-col_6 t-align_left">
+                              <div class="t754__title-wrapper">
+                                 <div class="t754__title t-name t-name_xl js-product-name" style="font-weight:400;"> Серебристый бюст оленя </div>
+                              </div>
+                              <div class="t754__price-wrapper ">
+                                 <div class="t754__price t754__price-item t-name t-name_xs" data-auto-correct-font-size="rem" style="font-weight:400;">
+                                    <div class="t754__price-value js-product-price notranslate" translate="off" field="li_price__1500470245901">4999</div>
+                                    <div class="t754__price-currency">тг.</div>
+                                 </div>
+                              </div>
+                              <div class="t754__btn-wrapper">
+                                 <a href="#order" target="" class="t754__btn t-btn t-btn_sm" style="color:#ffffff;background-color:#000000;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;">
+                                    <table style="width:100%; height:100%;">
+                                       <tbody>
+                                          <tr>
+                                             <td>Добавить в корзину</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </a>
+                              </div>
+                              <div class="t754__descr t-descr t-descr_xxs"> Бюст оленя сделан из пластика и покрыт металлом </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--.prod-full--> 
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <!--
-    Modal for full size images on click
-    <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
-        <span class="button black xxlarge display-topright">×</span>
-        <div class="modal-content animate-zoom center transparent padding-64">
-            <img id="img01" alt="при click срабатывает" src="" class="image">
-            <p id="caption"></p>
-        </div>
-    </div>
-    -->
-    <!-- Designers -->
-    <div class="container" id="about_sites" style="margin-top:10px">
-        <h1 class="xxxlarge text-red"><b>О сайтах</b></h1>
-        <hr style="width:50px;border:5px solid red" class="round">
-        <p> ВМЕСТЕ С САЙТОМ ВЫ ПОЛУЧАЕТЕ ГАРАНТИЙНОЕ ОБСЛУЖИВАНИЕ НА 1 МЕСЯЦ.</br>
-            Мы бесплатно устраним любые «баги» или ошибки, которые возникнут в течение гарантийного периода.</br>
-            КОНСУЛЬТАЦИИ ПО ПРОДВИЖЕНИЮ САЙТА.</br>
-            При необходимости мы проконсультируем как лучше всего продвинуть сайт и привлечь клиентов.</br>
-            ТЕХНИЧЕСКОЕ СОПРОВОЖДЕНИЕ И ДОРАБОТКИ САЙТА.</br>
-            Дополнительно мы возьмемся за сопровождение сайта и реализуем новый функционал, который может потребоваться со временем.</br>
-            БОНУСЫ</br>
-            При дальнейшем сотрудничестве по продвижению или интернет-рекламе вы получите приятные бонусы от компании</br>
-        </p>
-    </div>
-    <!-- Packages / Pricing Tables -->
-    <div class="container" id="sites">
-        <h1 class="xxxlarge text-red"><b>Тарифы</b></h1>
-        <hr style="width:50px;border:5px solid red" class="round">
-        <p>Вы также можете ознакомиться с нашим
-            <a href="./docs/commercial_proposal.pdf" title="коммерческим предложением" target="_blank"
-               class="hover-opacity"><strong>коммерческим предложением(*нажми на меня*)</strong></a>
-        </p>
-    </div>
-
-    <div class="row-padding">
-        <div class="half margin-bottom">
-            <ul class="ul light-grey center">
-                <li class="dark-grey xlarge padding-32">Тариф - Dev</li>
-                <li class="padding-16">Разработка сайта</li>
-                <li class="padding-16">
-                    <h2>от 50 000тг.</h2>
-                </li>
-                <li class="light-grey padding-24">
-                    <!--
-                    <button class="white padding-large hover-black">
-                        <a href="#sendMsg">Заказать</a>
-                    </button>
-                    -->
-                    <div>
-                        <input class="button white padding-large hover-black" type="submit" value="Заказать"/>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="half">
-            <ul class="ul light-grey center">
-                <li class="red xlarge padding-32">Тариф - Pro</li>
-                <li class="padding-16">Разработка сайта</li>
-                <li class="padding-16">Сопровождение сайта</li>
-                <li class="padding-16">
-                    <h2>от 100 000тг.</h2>
-                    <span class="opacity">1 доработка в месяц</span>
-                </li>
-                <li class="light-grey padding-24">
-                    <div>
-                        <input class="button red padding-large hover-black" type="submit" value="Заказать"/>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Services -->
-    <div class="container" id="contact" style="margin-top:15px" itemscope itemtype="http://schema.org/Organization">
-        <h1 class="xxxlarge text-red"><b>Контакты</b></h1>
-        <hr style="width:50px;border:5px solid red" class="round">
-        <p>Вы можете связаться с нами:</p>
-        <p>сайт: https://<span itemprop="name">ohZero.kz</span></p>
-        <p>Тел.: <a href="tel:+77064449731"><span itemprop="telephone">+7 706 444 9731</span></a></p>
-        <p>Тел.: <a href="tel:+77064009731"><span itemprop="telephone">+7 706 400 9731</span></a></p>
-        <p>Почта: <a href="mailto:ohzero@mail.ru"><span itemprop="email">support@ohZero.kz</span></a></p>
-        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Адрес:
-            <span itemprop="addressLocality">г. Нур-Султан </span>
-            <span itemprop="streetAddress">пр. Момышулы 2в, </span>
-            <span itemprop="postalCode">010000</span>
-        </p>
-    </div>
-
-
-    <!-- Отправить сообщение -->
-    <div id="sendMsg">
-        <div class="container" >
-            <h1 class="xxxlarge text-red"><b>Отправить сообщение</b></h1>
-            <hr style="width:50px;border:5px solid red" class="round">
-            <p>Вы можете отправить нам сообщение/письмо заполнив этот бланк и мы свяжемся с Вами в течении 2х минут.</p>
-            <div>
-                <div class="section">
-                    <label for="form_name" >Ваше имя</label>
-                    <input id="form_name" class="input border" type="text" name="name" required="">
-                </div>
-                <div class="section">
-                    <label for="form_contact" >Ваши контакты</label>
-                    <input id="form_contact" class="input border" type="text" name="contact" required="">
-                </div>
-                <div class="section">
-                    <label for="form_message" >Сообщение</label>
-                    <input id="form_message" class="input border" type="text" name="message" required="">
-                </div>
-                <button type="submit" class="button block padding-large red margin-bottom">Отправить сообщение
-                </button>
+            <script>
+			$(document).ready(function () {
+			    t754__showMore('284167260');
+			    setTimeout(function () {
+			        t754__init('284167260');
+			    }, 500);
+			});
+            </script>
+            <style type="text/css"> #rec284167260 .t-slds__bullet_active .t-slds__bullet_body { background-color: #222 !important; } #rec284167260 .t-slds__bullet:hover .t-slds__bullet_body { background-color: #222 !important; }</style>
+         </div>
+         <div id="rec284167262" class="r t-rec t-rec_pt_150 t-rec_pb_150" style="padding-top:150px;padding-bottom:150px;background-color:#ffffff; " data-record-type="560" data-bg-color="#ffffff" data-animationappear="off">
+            <!-- t560-->
+            <div class="t560">
+               <div class="t-container">
+                  <div class="t-col t-col_6 t-prefix_3 t-align_center">
+                     <div class="t560__text t-text-impact t-text-impact_xs t560__text-bottom-margin" style="color:#000000;font-size:28px;font-weight:300;" field="text"><a href="tel:+1 123 456 78 90">+7 776 746 91 </a>13<br>zhassulan.baigozha2@gmail.com</div>
+                     <div class="t-text t-text_sm" style="color:#000000;" field="text2">По любым вопросам и для заказа свяжитесь с нами по телефону, почте и в соцсетях.</div>
+                     <div class="t-sociallinks">
+                        <div class="t-sociallinks__wrapper">
+                           <div class="t-sociallinks__item">
+                              <a href="https://vk.com/baygozha" target="_blank">
+                                 <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                                    <desc>VK</desc>
+                                    <path d="M47.761,24c0,13.121-10.639,23.76-23.76,23.76C10.878,47.76,0.239,37.121,0.239,24c0-13.123,10.639-23.76,23.762-23.76C37.122,0.24,47.761,10.877,47.761,24 M35.259,28.999c-2.621-2.433-2.271-2.041,0.89-6.25c1.923-2.562,2.696-4.126,2.45-4.796c-0.227-0.639-1.64-0.469-1.64-0.469l-4.71,0.029c0,0-0.351-0.048-0.609,0.106c-0.249,0.151-0.414,0.505-0.414,0.505s-0.742,1.982-1.734,3.669c-2.094,3.559-2.935,3.747-3.277,3.524c-0.796-0.516-0.597-2.068-0.597-3.171c0-3.449,0.522-4.887-1.02-5.259c-0.511-0.124-0.887-0.205-2.195-0.219c-1.678-0.016-3.101,0.007-3.904,0.398c-0.536,0.263-0.949,0.847-0.697,0.88c0.31,0.041,1.016,0.192,1.388,0.699c0.484,0.656,0.464,2.131,0.464,2.131s0.282,4.056-0.646,4.561c-0.632,0.347-1.503-0.36-3.37-3.588c-0.958-1.652-1.68-3.481-1.68-3.481s-0.14-0.344-0.392-0.527c-0.299-0.222-0.722-0.298-0.722-0.298l-4.469,0.018c0,0-0.674-0.003-0.919,0.289c-0.219,0.259-0.018,0.752-0.018,0.752s3.499,8.104,7.573,12.23c3.638,3.784,7.764,3.36,7.764,3.36h1.867c0,0,0.566,0.113,0.854-0.189c0.265-0.288,0.256-0.646,0.256-0.646s-0.034-2.512,1.129-2.883c1.15-0.36,2.624,2.429,4.188,3.497c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.281,32.451,37.763,31.321,35.259,28.999"></path>
+                                 </svg>
+                              </a>
+                           </div>
+                           <div class="t-sociallinks__item">
+                              <a href="https://www.instagram.com/zhass22/" target="_blank">
+                                 <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 30 30" xml:space="preserve">
+                                    <desc>Instagram</desc>
+                                    <path d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z"></path>
+                                    <path d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z"></path>
+                                    <path d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z"></path>
+                                 </svg>
+                              </a>
+                           </div>
+                           <div class="t-sociallinks__item">
+                              <a href="https://t.me/Baigozha" target="_blank">
+                                 <svg class="t-sociallinks__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="48px" viewBox="0 0 60 60" xml:space="preserve">
+                                    <desc>Telegram</desc>
+                                    <path d="M30 0C13.4 0 0 13.4 0 30s13.4 30 30 30 30-13.4 30-30S46.6 0 30 0zm16.9 13.9l-6.7 31.5c-.1.6-.8.9-1.4.6l-10.3-6.9-5.5 5.2c-.5.4-1.2.2-1.4-.4L18 32.7l-9.5-3.9c-.7-.3-.7-1.5 0-1.8l37.1-14.1c.7-.2 1.4.3 1.3 1z"></path>
+                                    <path d="M22.7 40.6l.6-5.8 16.8-16.3-20.2 13.3"></path>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- End page  content -->
+         </div>
+         <div id="rec284167263" class="r t-rec" style="opacity: 1;" data-animationappear="off" data-record-type="706">
+             <!--tcart-->  <script> $(document).ready(function () {
+                t_onFuncLoad('tcart__init', function () {
+                    tcart__init('284167263', '');
+                }); /* hack for Android */ var ua = navigator.userAgent.toLowerCase();
+                var isAndroid = (ua.indexOf("android") > -1);
+                if (isAndroid && !$('.t-body').hasClass('t-body_scrollable-hack-for-android')) {
+                    $('.t-body').addClass('t-body_scrollable-hack-for-android');
+                    $('head').append("<style>@media screen and (max-width: 560px) {\n.t-body_scrollable-hack-for-android {\noverflow: visible !important;\n}\n}\n</style>");
+                    console.log('Android css hack was inited');
+                } /* fix Instagram iPhone keyboard bug */ if (ua.indexOf("instagram") !== -1 && ua.indexOf("iphone") !== -1) {
+                    $(".t-body").css("position", "relative");
+                }
+                var cartWindow = $("#rec284167263 .t706__cartwin");
+                var curMode = $(".t-records").attr("data-tilda-mode");
+                if (cartWindow.length && curMode != "edit" && curMode != "preview") {
+                    cartWindow.bind('scroll', t_throttle(function () {
+                            if (window.lazy === 'y' || $('#allrecords').attr('data-tilda-lazy') === 'yes') {
+                                t_onFuncLoad('t_lazyload_update', function () {
+                                    t_lazyload_update();
+                                });
+                            }
+                        }, 500))
+                }
+            });
+            </script>
+            <div class="t706" data-cart-ver="137" data-opencart-onorder="yes" data-project-currency="тг." data-project-currency-side="r" data-project-currency-sep="," data-project-currency-code="">
+               <div class="t706__carticon t706__carticon_showed" style="opacity: 1;">
+                  <div class="t706__carticon-text t-name t-name_xs" style="display: block;">=&nbsp;4 398&nbsp;тг.</div>
+                  <div class="t706__carticon-wrapper">
+                     <!--<div class="t706__carticon-imgwrap"><img class="t706__carticon-img" src="https://static.tildacdn.com/lib/linea/930cac0f-758b-b7ee-1eb0-b18fc6e10893/ecommerce_bag.svg"></div>--> 
+                     <div class="t706__carticon-imgwrap">
+                        <svg class="t706__carticon-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                           <path fill="none" stroke-width="2" stroke-miterlimit="10" d="M44 18h10v45H10V18h10z"></path>
+                           <path fill="none" stroke-width="2" stroke-miterlimit="10" d="M22 24V11c0-5.523 4.477-10 10-10s10 4.477 10 10v13"></path>
+                        </svg>
+                     </div>
+                     <div class="t706__carticon-counter" style="background-color:#ff4a4a;">2</div>
+                  </div>
+               </div>
+               <div class="t706__cartwin" style="opacity: 1;">
+                  <div class="t706__cartwin-close">
+                     <div class="t706__cartwin-close-wrapper">
+                        <svg class="t706__cartwin-close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                           <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                              <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                              <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                           </g>
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="t706__cartwin-content">
+                     <!-- google forms тут должны быть-->
+                     <div class="t706__cartwin-top">
+                        <div class="t706__cartwin-heading t-name t-name_xl">Ваш заказ:</div>
+                     </div>
+                     <div class="t706__cartwin-products">
+                        <div class="t706__product" data-cart-product-i="0">
+                           <div class="t706__product-thumb">
+                              <div class="t706__product-imgdiv" style="background-image:url(&#39;https://static.tildacdn.com/tild3635-6637-4762-b465-313238346461/21623729612_6c673d2776_k.jpg&#39;);"></div>
+                           </div>
+                           <div class="t706__product-title t-descr t-descr_sm"><a style="color: inherit" target="_blank" href="#!/tproduct/284167260-1498486301712"> Будильник «Alise» </a></div>
+                           <div class="t706__product-plusminus t-descr t-descr_sm"><span class="t706__product-minus"><img src="./svg/arrows_circle_minus.svg" style="width:16px;height:16px;border:0"></span><span class="t706__product-quantity">1</span><span class="t706__product-plus"><img src="./svg/arrows_circle_minus.svg" style="width:16px;height:16px;border:0"></span></div>
+                           <div class="t706__product-amount t-descr t-descr_sm">1 899&nbsp;тг.</div>
+                           <div class="t706__product-del"><img src="./svg/arrows_circle_remove.svg" style="width:20px;height:20px;border:0;"></div>
+                        </div>
+                        <div class="t706__product" data-cart-product-i="1">
+                           <div class="t706__product-thumb">
+                              <div class="t706__product-imgdiv" style="background-image:url(&#39;https://static.tildacdn.com/tild6338-3831-4334-b365-343965393562/14432770907_d8dc8e3fb4_o.jpg&#39;);"></div>
+                           </div>
+                           <div class="t706__product-title t-descr t-descr_sm"><a style="color: inherit" target="_blank" href="#!/tproduct/284167260-1498486363994"> Обложка для плашета «Carnet» </a></div>
+                           <div class="t706__product-plusminus t-descr t-descr_sm"><span class="t706__product-minus"><img src="./svg/arrows_circle_minus.svg" style="width:16px;height:16px;border:0"></span><span class="t706__product-quantity">1</span><span class="t706__product-plus"><img src="./svg/arrows_circle_minus.svg" style="width:16px;height:16px;border:0"></span></div>
+                           <div class="t706__product-amount t-descr t-descr_sm">2 499&nbsp;тг.</div>
+                           <div class="t706__product-del"><img src="./svg/arrows_circle_remove.svg" style="width:20px;height:20px;border:0;"></div>
+                        </div>
+                     </div>
+                     <div class="t706__cartwin-bottom">
+                        <div class="t706__cartwin-prodamount-wrap t-descr t-descr_sm" style="display: block;"> <span class="t706__cartwin-prodamount-label">Сумма:&nbsp;</span><span class="t706__cartwin-prodamount">4 398&nbsp;тг.</span> </div>
+                     </div>
+                     <div class="t706__orderform ">
+                        <form 
+                           id="form284167263" 
+                           name="form284167263" 
+                           role="form" 
+                           action="https://ohzero.kz/" 
+                           method="POST" 
+                           data-formactiontype="0" 
+                           data-inputbox=".t-input-group" 
+                           class="t-form js-form-proccess t-form_inputs-total_3" 
+                           data-formsended-callback="t706_onSuccessCallback" 
+                           data-formcart="y">
+                           <!-- NO ONE SERVICES CONNECTED --> 
+						      <input type="hidden" name="tildaspec-formname" tabindex="-1" value="Cart"> 
+                           <div class="js-successbox t-form__successbox t-text t-text_md" style="display:none;"></div>
+                           <div class="t-form__inputsbox">
+                              <div class="t-input-group t-input-group_nm" data-input-lid="1496239431201">
+                                 <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no" field="li_title__1496239431201" style="">Ваше имя</div>
+                                 <div class="t-input-block">
+                                    <input type="text" name="Name" class="t-input js-tilda-rule " value="" data-tilda-req="1" data-tilda-rule="name" style="color:#000000; border:1px solid #000000; "> 
+                                    <div class="t-input-error"></div>
+                                 </div>
+                              </div>
+                              <div class="t-input-group t-input-group_em" data-input-lid="1496239459190">
+                                 <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no" field="li_title__1496239459190" style="">Ваш Email</div>
+                                 <div class="t-input-block">
+                                    <input type="text" name="Email" class="t-input js-tilda-rule " value="" data-tilda-req="1" data-tilda-rule="email" style="color:#000000; border:1px solid #000000; "> 
+                                    <div class="t-input-error"></div>
+                                 </div>
+                              </div>
+                              <div class="t-input-group t-input-group_ph" data-input-lid="1496239478607">
+                                 <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no" field="li_title__1496239478607" style="">Ваш телефон</div>
+                                 <div class="t-input-block">
+                                    <input type="tel" name="Phone" class="t-input js-tilda-rule " value="" data-tilda-req="1" data-tilda-rule="phone" pattern="[0-9]*" style="color:#000000; border:1px solid #000000; "> 
+                                    <div class="t-input-error"></div>
+                                 </div>
+                              </div>
+                              <div class="t706__cartwin-totalamount-wrap t-descr t-descr_xl" style="display: none;">
+                                 <div class="t706__cartwin-totalamount-info" style="margin-top: 10px; font-size:14px; font-weight:400;"></div>
+                                 <span class="t706__cartwin-totalamount-label">Сумма:&nbsp;</span><span class="t706__cartwin-totalamount">4 398&nbsp;тг.</span>
+                              </div>
+                              <div class="t-form__errorbox-middle">
+                                 <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
+                                    <div class="t-form__errorbox-text t-text t-text_md">
+                                       <p class="t-form__errorbox-item js-rule-error js-rule-error-all" style="display: none;"></p>
+                                       <p class="t-form__errorbox-item js-rule-error js-rule-error-req" style="display: none;"></p>
+                                       <p class="t-form__errorbox-item js-rule-error js-rule-error-email" style="display: none;"></p>
+                                       <p class="t-form__errorbox-item js-rule-error js-rule-error-name" style="display: none;"></p>
+                                       <p class="t-form__errorbox-item js-rule-error js-rule-error-phone" style="display: none;"></p>
+                                       <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength" style="display: none;"></p>
+                                       <p class="t-form__errorbox-item js-rule-error js-rule-error-string" style="display: none;"></p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="t-form__submit"> 
+                                 <button type="submit" class="t-submit" style="color:#fff;background-color:#000;">Оформить заказ</button>
+                              </div>
+                           </div>
+                           <div class="t-form__errorbox-bottom">
+                              <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
+                                 <div class="t-form__errorbox-text t-text t-text_md">
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-all" style="display: none;"></p>
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-req" style="display: none;"></p>
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-email" style="display: none;"></p>
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-name" style="display: none;"></p>
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-phone" style="display: none;"></p>
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength" style="display: none;"></p>
+                                    <p class="t-form__errorbox-item js-rule-error js-rule-error-string" style="display: none;"></p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div style="position: absolute; left: -5000px; bottom:0;"><input type="text" name="form-spec-comments" value="Its good" class="js-form-spec-comments" tabindex="-1"></div>
+                        </form>
+                        <style>
+                           #rec284167263 input::-webkit-input-placeholder {
+                              color: #000000;
+                              opacity: 0.5;
+                           }
 
+                           #rec284167263 input::-moz-placeholder {
+                              color: #000000;
+                              opacity: 0.5;
+                           }
 
-    <!-- W3.CSS Container -->
-    <div class=" container padding-32" style="padding-right:58px">
-        <div class="light-gray w3-center">
-            <div class="social whatsapp" >
-                <a rel="nofollow" target="_blank" href="https://api.whatsapp.com/send?phone=77064449731"><i
-                        class="fa fa-whatsapp fa-2x"></i></a>
+                           #rec284167263 input:-moz-placeholder {
+                              color: #000000;
+                              opacity: 0.5;
+                           }
+
+                           #rec284167263 input:-ms-input-placeholder {
+                              color: #000000;
+                              opacity: 0.5;
+                           }
+
+                           #rec284167263 textarea::-webkit-input-placeholder {
+                              color: #000000;
+                              opacity: 0.5;
+                           }
+
+                           #rec284167263 textarea::-moz-placeholder {
+                              color: #000000;
+                              opacity: 0.5;
+                           }
+
+                           #rec284167263 textarea:-moz-placeholder {
+                              color: #000000;
+                              opacity: 0.5;
+                           }
+
+                           #rec284167263 textarea:-ms-input-placeholder {
+                              color: #000000;
+                              opacity: 0.5;
+                           }
+						</style>
+                     </div>
+                  </div>
+               </div>
+               <div class="t706__cartdata"> </div>
             </div>
-            <div class="social telegram">
-                <a rel="nofollow" target="_blank" href="https://telegram.me/@Raushan_Baigozha"><i
-                        class="fa fa-paper-plane fa-2x"></i></a>
-            </div>
-            <div class="social instagram">
-                <a rel="nofollow" target="_blank" href="https://www.instagram.com/ohzero.kz"><i
-                        class="fa fa-instagram fa-2x"></i></a>
-            </div>
-            <div class="social vk">
-                <a rel="nofollow" target="_blank" href="https://vk.com/ohzerokz"><i
-                        class="fa fa-vk fa-2x"></i></a>
-            </div>
-        </div>
-    </div>
-
-
-    <script>
-        // Script to open and close sidebar
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-
-        /*
-        // Modal Image Gallery
-        function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-        }
-        */
-    </script>
-</div>
-</body>
+            <style></style>
+            <!--/tcart-->
+         </div>
+      </div>
+       <!--Stat-->  
+	   <script type = "text/javascript" > if (!window.mainTracker) {
+              window.mainTracker = 'tilda';
+          }
+          (function (d, w, k, o, g) {
+          var n = d.getElementsByTagName(o)[0],
+          s = d.createElement(o),
+          f = function () {
+              n.parentNode.insertBefore(s, n);
+          };
+          s.type = "text/javascript";
+          s.async = true;
+          s.key = k;
+          s.id = "tildastatscript";
+          s.src = g;
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else {
+              f();
+          }
+      })(document, window, 'f499e3fb6fcbd9e53cd9d4242631d5a7', 'script', 'https://static.tildacdn.com/js/tildasimplestat-0.1.min.js');
+      </script>
+      <div class="t-zoomer__wrapper">
+         <div class="t-zoomer__container">            </div>
+         <div class="t-zoomer__bg"></div>
+         <div class="t-zoomer__close">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M1.41421 -0.000151038L0 1.41406L21.2132 22.6273L22.6274 21.2131L1.41421 -0.000151038Z" fill="black"></path>
+               <path d="M22.6291 1.41421L21.2148 0L0.00164068 21.2132L1.41585 22.6274L22.6291 1.41421Z" fill="black"></path>
+            </svg>
+         </div>
+         <div class="t-zoomer__scale showed">
+            <svg class="icon-increase" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M22.832 22L17.8592 17.0273" stroke="black" stroke-width="2" stroke-linecap="square"></path>
+               <path fill-rule="evenodd" clip-rule="evenodd" d="M4.58591 3.7511C0.917768 7.41924 0.917768 13.367 4.58591 17.0352C8.25405 20.7033 14.2019 20.7033 17.87 17.0352C21.5381 13.367 21.5381 7.41924 17.87 3.7511C14.2019 0.0829653 8.25405 0.0829653 4.58591 3.7511Z" stroke="black" stroke-width="2"></path>
+               <path d="M6.25781 10.3931H16.2035" stroke="black" stroke-width="2"></path>
+               <path d="M11.2305 15.3662V5.42053" stroke="black" stroke-width="2"></path>
+            </svg>
+            <svg class="icon-decrease" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M21.9961 22L17.0233 17.0273" stroke="black" stroke-width="2" stroke-linecap="square"></path>
+               <path fill-rule="evenodd" clip-rule="evenodd" d="M3.74997 3.7511C0.0818308 7.41924 0.0818308 13.367 3.74997 17.0352C7.41811 20.7033 13.3659 20.7033 17.0341 17.0352C20.7022 13.367 20.7022 7.41924 17.0341 3.7511C13.3659 0.0829653 7.41811 0.0829653 3.74997 3.7511Z" stroke="black" stroke-width="2"></path>
+               <path d="M5.41797 10.3931H15.3637" stroke="black" stroke-width="2"></path>
+            </svg>
+         </div>
+      </div>
+   </body>
 </html>
