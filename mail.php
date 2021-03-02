@@ -7,7 +7,7 @@ $message .= "Телефон: {$_POST['phone']}"; // добавляем теле�
 $message .= "Email: {$_POST['email']}"; // добавляем телефон в текст
 $headers .= 'Content-type: text/plain; charset=utf-8' . "\r\n"; // установливаем кодировку
 $headers .= 'From: mail@ohzero.kz' . "\r\n"; // добавляем отправителя
-
+pr($_POST);
 if( mail($to, $subject, $message, $headers) ){
 	echo '<p style="color: green;">Ваше сообщение отправлено</p>';
 }else{
