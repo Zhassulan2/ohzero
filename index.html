@@ -901,6 +901,7 @@
                         <div class="t706__cartwin-prodamount-wrap t-descr t-descr_sm" style="display: block;"> <span class="t706__cartwin-prodamount-label">Сумма:&nbsp;</span><span class="t706__cartwin-prodamount">4 398&nbsp;тг.</span> </div>
                      </div>
                      <div class="t706__orderform ">
+                        <!-- 
                         <form 
                            id="form284167263" 
                            name="form284167263" 
@@ -912,28 +913,32 @@
                            class="t-form js-form-proccess t-form_inputs-total_3" 
                            data-formsended-callback="t706_onSuccessCallback" 
                            data-formcart="y">
+                        -->
+                        <form id="recall">
+
+                        
                            <!-- NO ONE SERVICES CONNECTED --> 
-						      <input type="hidden" name="tildaspec-formname" tabindex="-1" value="Cart"> 
+						         <input type="hidden" name="tildaspec-formname" tabindex="-1" value="Cart"> 
                            <div class="js-successbox t-form__successbox t-text t-text_md" style="display:none;"></div>
                            <div class="t-form__inputsbox">
                               <div class="t-input-group t-input-group_nm" data-input-lid="1496239431201">
                                  <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no" field="li_title__1496239431201">Ваше имя</div>
                                  <div class="t-input-block">
-                                    <input type="text" name="Name" class="t-input js-tilda-rule " value="" data-tilda-req="1" data-tilda-rule="name" style="color:#000000; border:1px solid #000000; "> 
+                                    <input type="text" name="name" class="t-input js-tilda-rule " value="" data-tilda-req="1" data-tilda-rule="name" style="color:#000000; border:1px solid #000000; "> 
                                     <div class="t-input-error"></div>
                                  </div>
                               </div>
                               <div class="t-input-group t-input-group_em" data-input-lid="1496239459190">
                                  <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no" field="li_title__1496239459190">Ваш Email</div>
                                  <div class="t-input-block">
-                                    <input type="text" name="Email" class="t-input js-tilda-rule " value="" data-tilda-req="1" data-tilda-rule="email" style="color:#000000; border:1px solid #000000; "> 
+                                    <input type="text" name="email" class="t-input js-tilda-rule " value="" data-tilda-req="1" data-tilda-rule="email" style="color:#000000; border:1px solid #000000; "> 
                                     <div class="t-input-error"></div>
                                  </div>
                               </div>
                               <div class="t-input-group t-input-group_ph" data-input-lid="1496239478607">
                                  <div class="t-input-title t-descr t-descr_md" data-redactor-toolbar="no" field="li_title__1496239478607">Ваш телефон</div>
                                  <div class="t-input-block">
-                                    <input type="tel" name="Phone" class="t-input js-tilda-rule " value="" data-tilda-req="1" data-tilda-rule="phone" pattern="[0-9]*" style="color:#000000; border:1px solid #000000; "> 
+                                    <input type="tel" name="phone" class="t-input js-tilda-rule " value="" data-tilda-req="1" data-tilda-rule="phone" pattern="[0-9]*" style="color:#000000; border:1px solid #000000; "> 
                                     <div class="t-input-error"></div>
                                  </div>
                               </div>
@@ -955,7 +960,11 @@
                                  </div>
                               </div>
                               <div class="t-form__submit"> 
-                                 <button type="submit" class="t-submit" style="color:#fff;background-color:#000;">Оформить заказ</button>
+                                 <button type="submit"  
+                                 id="submit"
+                                 class="t-submit" 
+                                 style="color:#fff;background-color:#000;">Оформить заказ</button>
+                                 <div></div>
                               </div>
                            </div>
                            <div class="t-form__errorbox-bottom">
@@ -973,6 +982,7 @@
                            </div>
                            <div style="position: absolute; left: -5000px; bottom:0;"><input type="text" name="form-spec-comments" value="Its good" class="js-form-spec-comments" tabindex="-1"></div>
                         </form>
+                        <!--</form>-->
                         <style>
                            #rec284167263 input::-webkit-input-placeholder {
                               color: #000000;
@@ -1023,6 +1033,29 @@
             <!--/tcart-->
          </div>
       </div>
+      <script>
+         $(function(){
+            $('#recall').submit(function(e){
+               e.preventDefault();
+               var data = $(this).serialize();
+               $.ajax({
+                  url: 'mail.php',
+                  type: 'POST',
+                  data: data,
+                  beforeSend: function(){
+                     $('#submit').next().text('Отправляю...');
+                  },
+                  success: function(res){
+                     $('#recall').find('input').val('');
+                     $('#submit').next().html(res);
+                  },
+                  error: function(){
+                     alert('Ошибка!');
+                  }
+               });
+            });
+         });
+      </script>
        <!--Stat-->  
 	   <script type = "text/javascript" > if (!window.mainTracker) {
               window.mainTracker = 'tilda';
